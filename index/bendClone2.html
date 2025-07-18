@@ -56,6 +56,11 @@
             color: gray;
         }
 
+        .lang:hover {
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+
         .header_text a {
             text-decoration: none;
             font-size: 14px;
@@ -66,12 +71,20 @@
             color: #000;
         }
 
+        .sign_up:hover {
+            text-decoration-line: underline;
+        }
+
         .sign_in {
             color: #fff;
             background: #21c531;
             border-radius: 3px;
             padding: 10px 24px;
             font-family: 'NanumSquareNeoExtraBold';
+        }
+
+        .sign_in:hover {
+            box-shadow: 0px 0px 5px #21c531;
         }
 
         .main_form {
@@ -123,6 +136,10 @@
             border: none;
         }
 
+        .sign_up_btn:hover {
+            box-shadow: 0 -1px 3px 0 #21c531, 0 1px 3px 0 #21c531;
+        }
+
         .sign_up_btn a {
             text-decoration: none;
             color: #fff;
@@ -131,6 +148,10 @@
         .sign_in_btn {
             background: #fff;
             border: 1px solid #dcdcdc;
+        }
+
+        .sign_in_btn:hover {
+            box-shadow: 0 -1px 3px 0 #dcdcdc, 0 1px 3px 0 #dcdcdc;
         }
 
         .sign_in_btn a {
@@ -153,10 +174,15 @@
 
 
         .b_img {
-            background: url(./bg_intro.jpg);
-            height: 540px;
+            /* background: url(./bg_intro.jpg); */
+            width: 100vw;
+            
+        }
+
+        .b_img_text {
             text-align: center;
-            color: #fff;
+            color: #000;
+            justify-content: center;
         }
 
         .b_img h2 {
@@ -238,6 +264,10 @@
             font-family: 'NanumSquareNeoBold';
         }
 
+        .at_text a:hover {
+            text-decoration-line: underline
+        }
+
         .container {
             width: 1000px;
             display: flex;
@@ -252,7 +282,8 @@
 
         .container li {
             display: flex;
-
+            align-items: center;
+            margin-bottom: 20px;
         }
 
         .container figure {
@@ -260,12 +291,13 @@
             height: 100px;
             background: #21c531;
             border-radius: 20px;
-            margin: 0 20px 20px 0;
+            margin-right: 20px;
         }
 
         .container a {
             text-decoration: none;
             color: #000;
+
         }
 
         .app_down {
@@ -309,34 +341,46 @@
         }
 
         footer {
-            background-color: #222222;
+            height: 130px;
+            background: #2A3038;
+            line-height: 30px;
+
         }
 
-        footer ul {
+        footer ul,
+        footer p {
             display: flex;
             width: 1000px;
             margin: 0 auto;
             list-style: none;
-            padding-right: 10px;
         }
 
         footer a {
             text-decoration: none;
             color: #888888;
-            font-size: 14px;
+            font-size: 13px;
             position: relative;
+            padding-right: 20px;
+        }
 
+        footer a:hover {
+            text-decoration-line: underline;
         }
 
         footer a::after {
             content: '';
             display: block;
-            top: 0;
-            right: 0;
-            width: 1px;
-            height: 14px;
+            top: 50%;
+            right: 10px;
+            width: 2px;
+            height: 2.5px;
             position: absolute;
-            background-color: #fff;
+            background-color: #888888;
+        }
+
+        footer p {
+            color: #b3b3b3;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -391,12 +435,17 @@
 
     <div class="img_text">
         <div class="b_img">
-            <h2>모임을 위한 공간, 밴드</h2>
-            <p>
-                밴드는 그룹 멤버와 함께 하는 공간입니다.
-                <br>
-                동호회, 스터디, 주제별 모임을 밴드로 시작하세요.
-            </p>
+            <figure>
+                <img src="./bg_intro.jpg" alt="">
+            </figure>
+            <div class="b_img_text">
+                <h2>모임을 위한 공간, 밴드</h2>
+                <p>
+                    밴드는 그룹 멤버와 함께 하는 공간입니다.
+                    <br>
+                    동호회, 스터디, 주제별 모임을 밴드로 시작하세요.
+                </p>
+            </div>
         </div>
         <div class="s_img">
             <ul class="s_img_box">
@@ -456,6 +505,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -472,6 +522,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -488,6 +539,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -504,6 +556,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -520,6 +573,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -538,6 +592,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -554,6 +609,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -570,6 +626,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -586,6 +643,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -602,6 +660,7 @@
                         <div class="basis">
                             <p>제목</p>
                             <p>내용요약</p>
+                            <p>멤버수 / 리더이름</p>
                             <a href="#">
                                 밴드 더보기
                                 <!-- 아이콘 -->
@@ -668,6 +727,8 @@
             <li>
                 <a href="#">활동 정책</a>
             </li>
+        </ul>
+        <ul>
             <li>
                 <a href="#">권리침해 신고안내</a>
             </li>
