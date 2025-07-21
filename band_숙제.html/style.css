@@ -442,7 +442,7 @@ footer a {
     text-decoration: none;
     font-size: 13px;
     color: #888888;
-    padding-right: 20px;
+    padding-right: 10px;
     position: relative;
 }
 
@@ -453,10 +453,11 @@ footer a:hover {
 footer a::after {
     content: '';
     display: block;
-    top: 50%;
-    right: 10px;
+    /* top: 50%; */
+    top: 0;
+    right: 0;
     width: 2px;
-    height: 2.5px;
+    height: 2px;
     position: absolute;
     background-color: #888888;
 }
@@ -466,5 +467,5 @@ footer a::after {
     margin-top: 8px;
     color: #b3b3b3;
     font-family: 'NanumSquareNeoBold';
-    font-weight: 200;
+    /* font-weight: 200; */
 }

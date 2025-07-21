@@ -1,0 +1,138 @@
+:root {
+    --main-green: #21c531;
+    --background: #f6f8fa;
+    --font-black444: #444444;
+    --font-black222: #222222;
+    --section-margin-top: 50px;
+}
+
+/* 헤더 시작 */
+header,
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px;
+    background: var(--background);
+}
+
+.header_menu {
+    gap: 16px;
+}
+
+.header_menu > li {
+    font-size: 14px;
+}
+
+.lang_select {
+    border: none;
+    outline: none;
+    background: var(--background);
+    padding: 8px;
+    width: 100px;
+    color: var(--font-black444);
+}
+
+.lang_select:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header_menu > li > a {
+    text-decoration: none;
+    padding: 14px 24px;
+}
+
+.header_menu > li:nth-child(2) a {
+    color: var(--font-black222);
+}
+
+.header_menu > li:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+.header_menu > li:nth-child(3) a {
+    color: #ffffff;
+    background-color: var(--main-green);
+}
+
+.header_menu > li:nth-child(3) a:hover,
+.button_box > button:first-child > a:hover {
+    box-shadow: 0 2px 8px rgba(33,197,49,.54);
+}
+/* 헤더 끝 */
+
+/* main_container 시작 */
+.main_container {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 50px;
+}
+
+.phone_img {
+    background: url(../image/bg_sloganImg.jpg);
+    width: 540px;
+    height: 645px;
+    background-size: 540px auto;
+}
+
+.main_text_box > h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: var(--font-black222);
+}
+
+.main_text_box > p {
+    color: var(--font-black444);
+}
+
+.button_box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 12px;
+}
+
+.button_box > button {
+    border: none;
+    padding: 0;
+}
+
+.button_box > button > a {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    background: var(--main-green);
+    font-size: 16px;
+}
+
+.button_box > button:last-child > a {
+    background-color: #ffffff;
+    color: var(--font-black222);
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.link_text_box {
+    margin-top: 32px;
+}
+
+.link_text_box > p {
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.link_text_box > p > a {
+    color: var(--main-green);
+    font-weight: 600;
+}
