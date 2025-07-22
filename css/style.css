@@ -136,3 +136,190 @@ header {
     color: var(--main-green);
     font-weight: 600;
 }
+
+.bg_img_container {
+    background: url(../image/bg_intro.jpg);
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    background-size: cover;
+    gap: 48px;
+}
+
+.bg_img_container > h2 {
+    font-size: 42px;
+}
+
+.bg_img_container > p {
+    line-height: 24px;
+}
+/* main_container 끝 */
+
+/* about_container 시작 */
+.about_container {
+    margin: var(--section-margin-top) 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about_container > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.about_list > figure {
+    width: 300px;
+    height: 160px;
+    background-size: cover;
+}
+
+.list_img_1 {
+    background: url(../image/img_seo01.jpg);
+}
+
+.list_img_2 {
+    background: url(../image/img_seo02.jpg);
+}
+
+.list_img_3 {
+    background: url(../image/img_seo03.jpg);
+}
+
+.about_list > h2 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.about_list > p {
+    font-size: 14px;
+    line-height: 20px;
+}
+/* about_container 끝 */
+
+/* band_recommend 시작 */
+.band_recommend {
+    background: var(--background);
+    padding: 50px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.recomment_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.recomment_text > h2 {
+    font-size: 20px;
+}
+
+.recomment_ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recomment_list {
+    width: 500px;
+    margin: 12px 0;
+    display: flex;
+    gap: 12px;
+}
+
+.recomment_list > figure {
+    background: url(../image/기사.jpg);
+    width: 93px;
+    height: 93px;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.recomment_text_box > h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.recomment_text_box > p,
+.recomment_text_box > div > span {
+    font-size: 14px;
+    color: var(--font-black444);
+    margin: 8px 0;
+}
+
+.recomment_text_box > button {
+    padding: 2px 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 16px;
+    margin-top: 8px;
+    color: #797979;
+}
+
+.recomment_text_box > button > span {
+    color: #000;
+    font-weight: 600;
+}
+/* band_recommend 끝 */
+
+/* download 시작 */
+.download {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 32px 0;
+    align-items: center;
+}
+
+.download_left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.download_left > div > h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.download_store > a {
+    text-decoration: none;
+}
+/* download 끝 */
+
+/* footer 시작 */
+footer {
+    background: #2a3038;
+    padding: 32px;
+}
+
+footer > ul {
+    display: flex;
+    font-size: 14px;
+    width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 8px;
+}
+
+footer > ul a {
+    color: #7f7f7f;
+    text-decoration: none;
+}
+
+footer p {
+    color: #7f7f7f;
+    width: 1000px;
+    margin: 32px auto 0 auto;
+}
+/* footer 끝 */
